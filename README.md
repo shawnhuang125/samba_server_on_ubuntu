@@ -4,7 +4,7 @@
 
 ---
 
-## 🔧 一、安裝 Samba Server
+## 一、安裝 Samba Server
 
 ```bash
 sudo apt update
@@ -13,7 +13,7 @@ sudo apt install samba
 
 ---
 
-## 📁 二、建立共享資料夾
+## 二、建立共享資料夾
 
 ```bash
 sudo mkdir -p /srv/samba/share
@@ -23,7 +23,7 @@ sudo chmod 0775 /srv/samba/share
 
 ---
 
-## ⚙️ 三、編輯 Samba 設定檔
+## 三、編輯 Samba 設定檔
 
 ```bash
 sudo nano /etc/samba/smb.conf
@@ -41,7 +41,7 @@ sudo nano /etc/samba/smb.conf
 
 ---
 
-## 🔐 四、建立 Samba 使用者（選擇性）
+## 四、建立 Samba 使用者（選擇性）
 
 ```bash
 sudo adduser username
@@ -59,7 +59,7 @@ sudo smbpasswd -a username
 
 ---
 
-## 🚀 五、重新啟動 Samba 並測試
+## 五、重新啟動 Samba 並測試
 
 ```bash
 sudo systemctl restart smbd
@@ -68,7 +68,7 @@ sudo ufw allow 'Samba'
 
 ---
 
-## 🖥️ 六、從 Windows 存取共享資料夾
+## 六、從 Windows 存取共享資料夾
 
 在檔案總管網址列輸入：
 
@@ -84,7 +84,7 @@ sudo ufw allow 'Samba'
 
 ---
 
-## 🧪 七、測試與除錯指令
+## 七、測試與除錯指令
 
 ```bash
 testparm
